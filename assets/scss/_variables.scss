@@ -1,0 +1,15 @@
+$max-width:90%;
+$color-primary:#ff7404;
+$color-gray:#f8f9fa;
+$color-white:#fff;
+$color-black:#000;
+
+.container {
+    max-width: $max-width;
+    width: 100%;
+    margin: auto;
+}
+
+.active {
+    color: $color-primary;
+}

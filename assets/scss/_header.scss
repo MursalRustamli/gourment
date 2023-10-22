@@ -1,0 +1,49 @@
+header {
+  background: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  nav {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      width: 100%;
+      color: $color-white;
+      cursor: pointer;
+    }
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      li {
+        a {
+          cursor: pointer;
+          color: $color-white;
+        }
+      }
+    }
+    button {
+        display: none;
+        border: none;
+        background-color: $color-black;
+        color: $color-gray;
+    }
+    @media (max-width:768px) {
+        button {
+            display: block;
+        }
+        ul {
+            display: none;
+        }
+    }
+  }
+  @media (max-width:768px) {
+    background-color: $color-black;
+  }
+}
